@@ -62,12 +62,12 @@ public class Controller {
 		return this.service.getaddressbyid(id);
 	}
 	
-	@PutMapping("/user/{id}")
+	@PutMapping("/u/{id}")
 	public User test8(@PathVariable("id") int id ,@RequestBody User user)
 	{
 		return this.service.updateuser(id, user);
 	}
-	@PutMapping("/user/{id}")
+	@PutMapping("/a/{id}")
 	public Address test9(@PathVariable("id") int id ,@RequestBody Address address)
 	{
 		return this.service.updateaddr(id, address);
